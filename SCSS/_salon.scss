@@ -1,4 +1,37 @@
-.imagen-salon .img-salon {
+@import "extend";
+
+.container-salon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 50px;
+}
+
+.img-salon, 
+.mapa-salon {
+    max-width: 100%;
+    height: auto;
+    @extend .style-images;
+}
+
+.img-salon {
+    max-width: 500px;
+}
+
+.mapa-salon {
     width: 500px;
-    height: 500px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .container-salon {
+        flex-direction: column;
+    }
+
+    .img-salon, 
+    .mapa-salon{
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
 }

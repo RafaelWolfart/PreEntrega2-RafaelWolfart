@@ -1,3 +1,5 @@
+@import "extend";
+
 h1 {
     display: flex;
     justify-content: center;
@@ -26,6 +28,7 @@ h1 {
         width: 100%;
         max-width: 560px;
         height: 315px;
+        @extend .style-images;
     }
 }
 

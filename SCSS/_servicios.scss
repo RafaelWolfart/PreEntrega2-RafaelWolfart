@@ -1,6 +1,18 @@
-.imagen-servicios .images-servicio {
-    display: inline-block;
-    width: 400px;
-    height: 600px;
-    margin: 20px;
+@import "extend";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 0;
 }
+
+.images-servicio {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @extend .style-images;
+}
+

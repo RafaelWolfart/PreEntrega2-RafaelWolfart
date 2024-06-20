@@ -1,3 +1,5 @@
+@import "extend";
+
 .grid-container {
     width: 100%;
 }
@@ -10,4 +12,5 @@
 .w-100 {
     max-height: 650px;
     object-fit: cover;
+    @extend .style-images;
 }
