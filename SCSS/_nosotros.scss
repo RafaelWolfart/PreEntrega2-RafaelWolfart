@@ -1,0 +1,43 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.presentacion-youtube,
+.descripcion {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.presentacion-youtube {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .iframe-container,
+    .text-container {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+.text-container {
+    max-width: 100%;
+}

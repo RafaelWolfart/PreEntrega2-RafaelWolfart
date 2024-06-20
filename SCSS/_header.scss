@@ -1,0 +1,52 @@
+.container-fluid {
+    background-color: map-get($paleta-colores, first-color);
+}
+
+.nav-bar {
+    background-color: map-get($paleta-colores, first-color);
+}
+
+
+header{
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 20px;
+                font-weight: 700;
+            .nav-link{
+                color: map-get($paleta-colores, font-color);
+                font-weight: 500;
+            }
+            }
+        }
+    }
+}
+
+
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+header{
+    nav{
+        div{
+            a{
+                .logo{
+                    position: relative;
+                    max-width: 100px;
+                    margin-top: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+.boton-menu {
+    text-decoration: none;
+}
