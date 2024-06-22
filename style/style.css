@@ -21,12 +21,18 @@ header nav ul li .nav-link {
   justify-content: flex-end;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 header nav div a .logo {
   position: relative;
   max-width: 100px;
   margin-top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: none;
 }
 
 .boton-menu {
@@ -75,7 +81,7 @@ footer .texto-marca span {
 }
 
 .style-images, .images-servicio, .img-salon,
-.mapa-salon, .presentacion-youtube iframe, img, .w-100 {
+.mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -91,6 +97,8 @@ footer .texto-marca span {
 .w-100 {
   max-height: 650px;
   object-fit: cover;
+  border-radius: 0%;
+  box-shadow: none;
 }
 
 .flex-container {
@@ -130,7 +138,7 @@ footer .texto-marca span {
 }
 
 .style-images, .images-servicio, .img-salon,
-.mapa-salon, .presentacion-youtube iframe, img, .w-100 {
+.mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -173,7 +181,7 @@ h2 {
 }
 
 .style-images, .images-servicio, .img-salon,
-.mapa-salon, .presentacion-youtube iframe, .w-100, img {
+.mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -220,7 +228,7 @@ h1 {
 }
 
 .style-images, .images-servicio, .img-salon,
-.mapa-salon, .w-100, img, .presentacion-youtube iframe {
+.mapa-salon, img, .presentacion-youtube iframe {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -258,7 +266,7 @@ h1 {
     margin-bottom: 10px;
   }
 }
-.style-images, .images-servicio, .w-100, img, .presentacion-youtube iframe, .img-salon,
+.style-images, .images-servicio, img, .presentacion-youtube iframe, .img-salon,
 .mapa-salon {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -279,7 +287,7 @@ h1 {
   object-fit: cover;
 }
 
-.style-images, .w-100, img, .presentacion-youtube iframe, .img-salon,
+.style-images, img, .presentacion-youtube iframe, .img-salon,
 .mapa-salon, .images-servicio {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
