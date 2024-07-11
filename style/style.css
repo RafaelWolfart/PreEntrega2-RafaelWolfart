@@ -80,7 +80,12 @@ footer .texto-marca span {
   margin: 5px;
 }
 
-.style-images, .images-servicio, .img-salon,
+i:hover {
+  transform: scale(1.08);
+  transition: all 0.4s;
+}
+
+.style-images, .card .images-servicio, .img-salon,
 .mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -137,7 +142,7 @@ footer .texto-marca span {
   color: #000000;
 }
 
-.style-images, .images-servicio, .img-salon,
+.style-images, .card .images-servicio, .img-salon,
 .mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -145,9 +150,11 @@ footer .texto-marca span {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  width: 300px;
-  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0;
 }
 
 .images {
@@ -159,6 +166,13 @@ footer .texto-marca span {
 img {
   max-height: 500px;
   margin: 15px;
+  transition: all 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
 }
 
 * {
@@ -180,7 +194,7 @@ h2 {
   padding: 10px;
 }
 
-.style-images, .images-servicio, .img-salon,
+.style-images, .card .images-servicio, .img-salon,
 .mapa-salon, .presentacion-youtube iframe, img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -227,7 +241,7 @@ h1 {
   max-width: 100%;
 }
 
-.style-images, .images-servicio, .img-salon,
+.style-images, .card .images-servicio, .img-salon,
 .mapa-salon, img, .presentacion-youtube iframe {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -266,7 +280,7 @@ h1 {
     margin-bottom: 10px;
   }
 }
-.style-images, .images-servicio, img, .presentacion-youtube iframe, .img-salon,
+.style-images, .card .images-servicio, img, .presentacion-youtube iframe, .img-salon,
 .mapa-salon {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -274,21 +288,25 @@ h1 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 8px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 0;
 }
 
-.images-servicio {
+.card {
+  margin: 15px;
+}
+.card .images-servicio {
+  margin: 0;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .style-images, img, .presentacion-youtube iframe, .img-salon,
-.mapa-salon, .images-servicio {
+.mapa-salon, .card .images-servicio {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

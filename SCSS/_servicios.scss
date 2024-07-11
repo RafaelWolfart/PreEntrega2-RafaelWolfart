@@ -2,17 +2,21 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 8px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 0;
 }
 
-.images-servicio {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    @extend .style-images;
+.card {
+    margin: 15px;
+    .images-servicio {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        @extend .style-images;
+    }
 }
 

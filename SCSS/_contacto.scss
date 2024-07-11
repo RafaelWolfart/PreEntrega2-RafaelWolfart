@@ -16,15 +16,17 @@
     padding: 30px;
     flex: 1;
     order: 5;
-        textarea {
-            min-height: 140px;
-            resize: none;
-        }
-        input[type="submit"] {
-            background: map-get($paleta-colores, third-color);
-            border: none;
-            padding: 12px;
-        }
+
+    textarea {
+        min-height: 140px;
+        resize: none;
+    }
+
+    input[type="submit"] {
+        background: map-get($paleta-colores, third-color);
+        border: none;
+        padding: 12px;
+    }
 }
 
 .form__input {
