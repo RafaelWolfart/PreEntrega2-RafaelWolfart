@@ -93,6 +93,7 @@ i:hover {
 
 .grid-container {
   width: 100%;
+  max-width: 1200px;
 }
 
 .carousel-inner {
@@ -100,7 +101,7 @@ i:hover {
 }
 
 .w-100 {
-  max-height: 650px;
+  max-height: 620px;
   object-fit: cover;
   border-radius: 0%;
   box-shadow: none;
